@@ -14,6 +14,11 @@ const postSchema = new mongoose.Schema({
         maxlength: [500, "Description cannot be more than 500 characters"],
     },
 
+    location:{
+        type:String,
+        required: [true, "Please add a location"],
+    },
+
     price: {
         type: String,
         required: [true, "Please add a price"], 
